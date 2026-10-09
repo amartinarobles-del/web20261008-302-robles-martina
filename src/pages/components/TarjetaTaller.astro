@@ -1,0 +1,39 @@
+---
+const { 
+    nombre = "Martina",
+    apellido = "Robles",
+    descripcion = "Conoce nuestros talleres para un mejor conocimiento.", 
+    curso = "Tercero TP",
+    imagen = "public/img/gato.gif" } = Astro.props
+---
+
+<div id="info" class="card" >
+    <img src={imagen} alt={nombre}>
+
+    <h2>{nombre}</h2>
+    <h3>{apellido}</h3>
+    <h4>{curso}</h4>
+    <p>{descripcion}</p>
+</div>
+
+<style>
+    .card {
+        width: 300px;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        width: 75%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+</style>
+

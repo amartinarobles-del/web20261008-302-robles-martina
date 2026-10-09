@@ -1,0 +1,54 @@
+---
+const { titulo = "Pagina" } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{titulo}</title>
+    </head>
+    <body>
+        <layout titulo="Inicio | Centro de Talleres">
+            <section class="presentacion">
+                <p class="subtitulo">FORMACIÓN Y APRENDIZAJE</p>
+                <h1>Centro de Talleres</h1>
+
+                <p>
+                    Un espacio dedicado al aprendizaje, la creatividad y el
+                    desarrollo de nuevas habilidades.
+                </p>
+            </section>
+
+            <section class="talleres" id="talleres">
+                <h2>Nuestros talleres</h2>
+                <img src="public/img/pc.gif" alt="pc" width="100">
+                <article class="tarjeta">
+                    <h3>Programación web</h3>
+                    <p>
+                        Aprende los fundamentos de HTML y CSS para crear tus
+                        propias páginas web.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Diseño digital</h3>
+                    <p>
+                        Explora los colores, las formas y la composición para
+                        desarrollar proyectos creativos.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Escritura creativa</h3>
+                    <p>
+                        Desarrolla tus ideas y aprende a expresarlas mediante
+                        historias y textos originales.
+                    </p>
+                </article>
+            </section>
+        </layout>
+    </body>
+</html>

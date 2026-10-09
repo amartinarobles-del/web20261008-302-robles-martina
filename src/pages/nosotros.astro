@@ -1,14 +1,58 @@
 ---
-
+import Header from "./components/Header.astro";
+import Footer from "./components/Footer.astro";
+import '../styles/global.css'
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nosotros</title>
+    </head>
+    <body>
+        <h1>Nosotros</h1>
+        <Header />
+            <section class="nosotros">
+                <div class="introduccion">
+                    <p class="etiqueta">QUIÉNES SOMOS</p>
+                    <h1>Sobre nosotros</h1>
+
+                    <p>
+                        Somos un espacio dedicado al aprendizaje y al desarrollo
+                        de habilidades mediante talleres educativos y creativos.
+                    </p>
+                </div>
+
+                <div class="contenido-nosotros">
+                    <article class="bloque">
+                        <h2>Nuestra misión</h2>
+                        <p>
+                            Ofrecer oportunidades de aprendizaje que permitan
+                            descubrir intereses, adquirir conocimientos y
+                            desarrollar nuevas habilidades.
+                        </p>
+                    </article>
+
+                    <article class="bloque">
+                        <h2>Nuestra visión</h2>
+                        <p>
+                            Ser un espacio que motive a las personas a aprender,
+                            crear y compartir sus conocimientos.
+                        </p>
+                    </article>
+
+                    <article class="bloque">
+                        <h2>Nuestros valores</h2>
+                        <p>
+                            Promovemos el respeto, la creatividad, la
+                            responsabilidad y la colaboración.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <Footer />
+
+    </body>
 </html>
